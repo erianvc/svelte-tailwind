@@ -11,7 +11,7 @@ This is a project template for [Svelte](https://svelte.dev) apps with [TailwindC
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
 ```bash
-npx degit erianvc/svelte-tailwind-template svelte-app
+npx degit erianvc/svelte-tailwind svelte-app
 cd svelte-app
 ```
 
