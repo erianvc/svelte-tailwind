@@ -38,4 +38,4 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
-*Note if you modify the ``tailwind.css`` or ``tailwind.config.js`` file you have to down the server and resend the ``npm run dev`` command.*
+*Note if you modify the `tailwind.css` or `tailwind.config.js` file you have to down the server and resend the `npm run dev` command.*
