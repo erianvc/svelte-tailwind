@@ -1,6 +1,6 @@
-# Svelte with Tailwind Template
+# Template de Svelte con Tailwind
 
-![Svelte + Tailwind](https://i.imgur.com/qEDpxJj.png)
+[![Svelte + Tailwind](https://i.imgur.com/qEDpxJj.png)](https://dev.to/erianvc/configurando-svelte-con-tailwind-52g9)
 ---
 <br>
 
