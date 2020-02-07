@@ -37,5 +37,3 @@ npm run dev
 Acceda al [localhost:5000](http://localhost:5000) ahí podrá ver su aplicación ejecutándose. Edite la los archivos en la carpeta `src`, salve los cambios, y eso recargará la página pusiendo apreciar los cambios realizados.
 
 Por defecto, el servido solo responderá a peticiones del localhost. Para permitir conexiones desde otras computadoras, edite el comando `sirv` en package.json incluyendo la opción `--host 0.0.0.0`.
-
-*Tenga en cuenta que si modifica los archivos `tailwind.css` o `tailwind.config.js` tendrá que bajar el servidor y volver a levantarlo con el comando `npm run dev`.*
