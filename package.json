@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "start": "sirv public",
-    "dev": "npm run build:tailwind && rollup -c -w",
-    "build": "npm run prod:tailwind && rollup -c",
-    "build:tailwind": "npx tailwind build src/tailwind.css -o public/global.css",
-    "prod:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css"
+    "autobuild":"rollup -c -w",
+    "dev": "run-p watch:tailwind autobuild",
+    "build": "npm run build:tailwind && rollup -c",
+    "watch:tailwind": "postcss src/tailwind.css -o public/global.css -w",
+    "build:tailwind": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
