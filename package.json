@@ -1,9 +1,9 @@
 {
-  "name": "svelte-app",
+  "name": "svelte-tailwind",
   "version": "1.0.0",
   "scripts": {
     "start": "sirv public",
-    "autobuild":"rollup -c -w",
+    "autobuild": "rollup -c -w",
     "dev": "run-p watch:tailwind autobuild",
     "build": "npm run build:tailwind && rollup -c",
     "watch:tailwind": "postcss src/tailwind.css -o public/global.css -w",
