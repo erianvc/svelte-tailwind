@@ -11,10 +11,7 @@ module.exports = {
     plugins: [
         tailwindcss("./tailwind.config.js"),
 
-        // minify the css only in production
-        ...(process.env.NODE_ENV === "production" ? [cssnano] : []),
-
-        // only needed if you want to purge
-        ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
+        // purge and minify the css only in production
+        ...(process.env.NODE_ENV === "production" ? [purgecss, cssnano] : []),
     ]
 };
