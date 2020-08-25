@@ -1,5 +1,8 @@
 module.exports = {
-  purge: ['./**/*.html', './**/*.svelte', './**/*.css'],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
+  purge: ['./**/*.html', './**/*.svelte'],
   theme: {},
   variants: {},
   plugins: [],
