@@ -19,7 +19,14 @@ cd svelte-app
 
 ## Empezando
 
-Instalar las dependencias...
+*Para tener compatibilidad con Typescript, usar este comando antes de instalar las dependencias*
+
+```bash
+cd svelte-app
+npm run setup:ts
+```
+
+Instalando dependencias
 
 ```bash
 cd svelte-app
