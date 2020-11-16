@@ -1,5 +1,11 @@
 const tailwindcss = require('tailwindcss')
-const cssnano = require('cssnano')({ preset: 'default' })
+const cssnano = require('cssnano')({
+  preset: ['default', {
+    discardComments: {
+      removeAll: true,
+    },
+  }],
+})
 
 // only needed if you want to purge
 const purgecss = require('@fullhuman/postcss-purgecss')({
