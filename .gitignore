@@ -1,6 +1,7 @@
 /node_modules/
 /public/build/
 /public/global.css
+package-lock.json
 
 .vscode
 .DS_Store
