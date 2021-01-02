@@ -1,0 +1,5 @@
+/node_modules/
+/public/bundle/
+package.json
+package-lock.json
+/scripts/setupTypeScript.js

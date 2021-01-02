@@ -4,8 +4,35 @@ import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'
 import sveltePreprocess from 'svelte-preprocess'
+import css from 'rollup-plugin-css-only'
 
 const production = !process.env.ROLLUP_WATCH
+const preprocess = sveltePreprocess({ postcss: true })
+
+function serve() {
+  let server
+
+  function toExit() {
+    if (server) server.kill(0)
+  }
+
+  return {
+    writeBundle() {
+      if (server) return
+      server = require('child_process').spawn(
+        'npm',
+        ['run', 'start', '--', '--dev'],
+        {
+          stdio: ['ignore', 'inherit', 'inherit'],
+          shell: true,
+        }
+      )
+
+      process.on('SIGTERM', toExit)
+      process.on('exit', toExit)
+    },
+  }
+}
 
 export default {
   input: 'src/main.js',
@@ -17,14 +44,15 @@ export default {
   },
   plugins: [
     svelte({
-      // enable run-time checks when not in production
-      dev: !production,
-      // we'll extract any component CSS out into
-      // a separate file - better for performance
-      preprocess: sveltePreprocess({
-        postcss: true,
-      }),
+      preprocess,
+      compilerOptions: {
+        // enable run-time checks when not in production
+        dev: !production,
+      },
     }),
+    // we'll extract any component CSS out into
+    // a separate file - better for performance
+    css({ output: 'bundle.css' }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -52,21 +80,4 @@ export default {
   watch: {
     clearScreen: false,
   },
-}
-
-function serve() {
-  let started = false
-
-  return {
-    writeBundle() {
-      if (!started) {
-        started = true
-
-        require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
-          stdio: ['ignore', 'inherit', 'inherit'],
-          shell: true,
-        })
-      }
-    },
-  }
 }
