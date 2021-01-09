@@ -1,44 +1,59 @@
-# Template de Svelte con Tailwind
+<div align="center">
+  <img alt="Svelte + Tailwind" title="Svelte + Tailwind" src="https://repository-images.githubusercontent.com/238350141/7483b200-5130-11eb-9779-2ed5ec2d2734" />
+</div>
 
-[![Svelte + Tailwind](https://i.imgur.com/qEDpxJj.png)](https://dev.to/erianvc/configurando-svelte-con-tailwind-52g9)
----
-<br>
+<h1 align="center">Svelte with TailwindCSS Template</h1>
+<div align="center">
+    <a target="_blank" href="https://svelte.dev/">
+        <img title="Svelte" alt="Svelte badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Ferianvc.github.io%2Fapi%2Fsvelte-tailwind%2Fbadges%2Fsvelte%2F" />
+    </a>
+    <a target="_blank" href="https://tailwindcss.com/">
+        <img title="TailwindCSS" alt="TailwindCSS badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Ferianvc.github.io%2Fapi%2Fsvelte-tailwind%2Fbadges%2Ftailwindcss%2F" />
+    </a>
+</div>
 
-Este proyecto es un template para aplicaciones [Svelte](https://svelte.dev) con [Tailwind](https://tailwindcss.com/).
+## 🐑 Get the template or project
+Choose either to copy or fork depending on your preference.
 
-Para crear un nuevo proyecto basado en este template usando [degit](https://github.com/Rich-Harris/degit):
-
+### 📋 Copy
 ```bash
-npx degit erianvc/svelte-tailwind svelte-app
-cd svelte-app
+npx degit erianvc/svelte-tailwind my-app
 ```
 
-*Tenga en cuenta que necesita tener [Node.js](https://nodejs.org) instalado.*
+### 🍴 Fork
+Click the `Use this template` button on this project's GitHub page or [generate it here](https://github.com/erianvc/svelte-tailwind/generate).
 
-<br>
-
-## Empezando
-
-*Para tener compatibilidad con Typescript, usar este comando antes de instalar las dependencias*
+### ⬇️ Install Dependencies
+You need to be using [Nodejs v14.15 or higher](https://nodejs.org/es/download/).
 
 ```bash
-cd svelte-app
-npm run setup:ts
-```
-
-Instalando dependencias
-
-```bash
-cd svelte-app
+cd my-app
 npm install
 ```
 
-...luego iniciar [Rollup](https://rollupjs.org):
+## 🛠 Usage
 
+### 🧪 Development
 ```bash
 npm run dev
 ```
 
-Acceda al [localhost:5000](http://localhost:5000) ahí podrá ver su aplicación ejecutándose. Edite la los archivos en la carpeta `src`, salve los cambios, y eso recargará la página pusiendo apreciar los cambios realizados.
+### 🔨 Building for Production
+```bash
+npm run build
+```
 
-Por defecto, el servido solo responderá a peticiones del localhost. Para permitir conexiones desde otras computadoras, edite el comando `sirv` en package.json incluyendo la opción `--host 0.0.0.0`.
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/erianvc/svelte-tailwind/issues).
+
+## ⭐️ Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+This project is [MIT](https://github.com/erianvc/svelte-tailwind/blob/main/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
