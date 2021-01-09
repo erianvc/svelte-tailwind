@@ -5,7 +5,7 @@
     "start": "sirv public",
     "dev": "run-p css:watch svelte:dev",
     "build": "run-s css:build svelte:build",
-    "format": "prettier --write src/**/*.{js,json,svelte}",
+    "format": "prettier --write src/**/*.{svelte,js,json,css}",
     "svelte:dev": "rollup -c -w",
     "svelte:build": "rollup -c",
     "css:watch": "postcss src/tailwind.css -o public/global.css -w",

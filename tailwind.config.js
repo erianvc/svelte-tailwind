@@ -1,7 +1,7 @@
 module.exports = {
-  purge: ['./**/*.html', './**/*.svelte'],
-  darkMode: 'media',
-  theme: {},
-  variants: {},
-  plugins: [],
+    purge: ['./**/*.html', './**/*.svelte'],
+    darkMode: 'media',
+    theme: {},
+    variants: {},
+    plugins: [],
 }

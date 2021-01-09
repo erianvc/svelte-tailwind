@@ -1,7 +1,61 @@
-/node_modules/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 /public/build/
 /public/global.css
-package-lock.json
 
-.vscode
+# dependencies
+/node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# misc
+.env
+.env.test
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.vercel/
+
+### macOS ###
+# General
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# End of https://www.toptal.com/developers/gitignore/api/

@@ -2,4 +2,5 @@
 /public/bundle/
 package.json
 package-lock.json
-/scripts/setupTypeScript.js
+pnpm-lock.yaml
+yarn.lock
