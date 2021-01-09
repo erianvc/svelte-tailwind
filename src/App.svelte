@@ -1,31 +1,33 @@
-<script>
-    export let world
-</script>
-
 <main>
     <section>
-        <h1>¡Hola {world}!</h1>
+        <h1>Svelte with TailwindCSS Template</h1>
         <p>
-            Visita el
+            Visit the
             <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://svelte.dev/tutorial">tutorial de Svelte</a>
-            para aprender a construir aplicaciones con Svelte.
+                href="https://svelte.dev/tutorial">svelte.dev</a>
+            to learn how to build web applications with Svelte.
         </p>
     </section>
 </main>
 
 <style>
     main {
-        @apply grid w-screen h-screen p-4 mx-auto my-0 text-center place-items-center dark:bg-gray-800 dark:text-white;
+        @apply grid min-h-screen text-center place-items-center dark:bg-gray-800;
     }
 
     h1 {
-        @apply max-w-lg mb-4 text-6xl font-thin text-red-500 uppercase;
+        @apply text-4xl font-thin uppercase lg:text-6xl;
+        color: #ff3e00;
+    }
+
+    p {
+        @apply mx-auto my-4 leading-5 dark:text-white;
     }
 
     a {
-        @apply text-red-600 underline;
+        @apply underline;
+        color: #ff3e00;
     }
 </style>
